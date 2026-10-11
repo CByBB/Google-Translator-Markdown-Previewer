@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 300px;
+  color: #202124;
+  background: #fff;
+  font: 14px/1.45 Roboto, "Segoe UI", Arial, sans-serif;
+}
+
+header {
+  padding: 16px 16px 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 0;
+  padding: 8px 16px 4px;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 2px;
+}
+
+.hint {
+  margin: 0;
+  padding: 4px 16px 16px;
+  color: #5f6368;
+  font-size: 12px;
+  line-height: 1.5;
+}

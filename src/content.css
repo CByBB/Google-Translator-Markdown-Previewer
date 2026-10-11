@@ -1,0 +1,62 @@
+body > c-wiz:nth-of-type(2) > div > div:nth-of-type(2) > c-wiz {
+  max-width: none !important;
+}
+
+.gtt-md-host {
+  box-sizing: border-box;
+  overflow: visible;
+  border-radius: 12px;
+  background: transparent !important;
+}
+
+.gtt-md-host[hidden] {
+  display: none !important;
+}
+
+.gtt-md-hide-raw,
+.gtt-md-hide-raw * {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  text-shadow: none !important;
+}
+
+.gtt-md-btn {
+  position: absolute;
+  z-index: 6;
+  bottom: 14px;
+  height: 28px;
+  margin: 0;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  font: 500 12px/28px Roboto, "Google Sans", Arial, sans-serif;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gtt-md-btn:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+.gtt-md-toggle {
+  left: 116px;
+  background: rgba(26, 115, 232, 0.12);
+  color: #1967d2;
+}
+
+.gtt-md-toggle[aria-pressed="true"] {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.gtt-md-dark .gtt-md-toggle {
+  background: rgba(138, 180, 248, 0.16);
+  color: #8ab4f8;
+}
+
+.gtt-md-dark .gtt-md-toggle[aria-pressed="true"] {
+  background: #8ab4f8;
+  color: #202124;
+}

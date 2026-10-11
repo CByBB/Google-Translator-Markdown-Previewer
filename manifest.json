@@ -1,0 +1,89 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown Preview for Google Translate",
+  "version": "1.6.3",
+  "description": "Renders Markdown in the Google Translate result, including tables and Mermaid diagrams. A long translation is shown in full.",
+  "permissions": ["storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/mermaid-frame.html"],
+      "matches": [
+        "https://translate.google.com/*",
+        "https://translate.google.co.jp/*",
+        "https://translate.google.co.uk/*",
+        "https://translate.google.co.kr/*",
+        "https://translate.google.com.hk/*",
+        "https://translate.google.com.tw/*",
+        "https://translate.google.de/*",
+        "https://translate.google.fr/*",
+        "https://translate.google.es/*",
+        "https://translate.google.it/*",
+        "https://translate.google.com.br/*",
+        "https://translate.google.ca/*",
+        "https://translate.google.co.in/*",
+        "https://translate.google.com.au/*",
+        "https://translate.google.com.mx/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Markdown Preview for Google Translate",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://translate.google.com/*",
+        "https://translate.google.co.jp/*",
+        "https://translate.google.co.uk/*",
+        "https://translate.google.co.kr/*",
+        "https://translate.google.com.hk/*",
+        "https://translate.google.com.tw/*",
+        "https://translate.google.de/*",
+        "https://translate.google.fr/*",
+        "https://translate.google.es/*",
+        "https://translate.google.it/*",
+        "https://translate.google.com.br/*",
+        "https://translate.google.ca/*",
+        "https://translate.google.co.in/*",
+        "https://translate.google.com.au/*",
+        "https://translate.google.com.mx/*"
+      ],
+      "js": ["src/markdown.js", "src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "https://translate.google.com/*",
+        "https://translate.google.co.jp/*",
+        "https://translate.google.co.uk/*",
+        "https://translate.google.co.kr/*",
+        "https://translate.google.com.hk/*",
+        "https://translate.google.com.tw/*",
+        "https://translate.google.de/*",
+        "https://translate.google.fr/*",
+        "https://translate.google.es/*",
+        "https://translate.google.it/*",
+        "https://translate.google.com.br/*",
+        "https://translate.google.ca/*",
+        "https://translate.google.co.in/*",
+        "https://translate.google.com.au/*",
+        "https://translate.google.com.mx/*"
+      ],
+      "js": ["src/translate-page.js"],
+      "world": "MAIN",
+      "run_at": "document_end"
+    }
+  ]
+}

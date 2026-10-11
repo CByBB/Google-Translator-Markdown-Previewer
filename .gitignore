@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.log
+.cursor/
+node_modules/
+test/*.ja.txt
+test/inject.b64
+test/payload.json
+test/expr.js
+test/expr-md.js
+test/expr-app.js
+test/sample-url.js

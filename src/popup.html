@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Markdown Preview</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <h1>Markdown preview</h1>
+    </header>
+    <label class="row">
+      <input id="enabled" type="checkbox">
+      <span>Render the translation as Markdown</span>
+    </label>
+    <p class="hint">
+      When the translation contains Markdown, that box shows formatted text, including tables and Mermaid diagrams.
+      The source box stays as you typed it.
+      A long translation is shown in full. Breaks between requests fall at a paragraph or sentence.
+    </p>
+    <script src="popup.js"></script>
+  </body>
+</html>
